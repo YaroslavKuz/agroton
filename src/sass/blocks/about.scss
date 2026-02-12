@@ -1,0 +1,79 @@
+@use "/src/sass/base/buton.scss" as *;
+@use "/src/sass/base/title.scss" as *;
+@use "/src/sass/base/basic.scss" as *;
+
+.about {
+    margin-top: 8px;
+
+    &__top {
+        height: 748px;
+        border-radius: 20px;
+        background: url('/src/img/header/Rectangle.png') center / cover no-repeat;
+    }
+
+    &__achivements {
+        display: flex;
+        margin-top: -60px;
+        justify-content: space-between;
+
+    }
+
+    &__achivement {
+        cursor: pointer;
+        border-radius: 20px;
+        background-color: #f4f4e7;
+        max-width: 580px;
+        padding: 14px 10px;
+        display: flex;
+        gap: 0 25px;
+
+        a {
+            padding: 0;
+        }
+
+        &-imgbox {
+            position: relative;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        &-imgbox::after {
+            content: '';
+            position: absolute;
+            display: block;
+            background: url('/src/img/about/ellipse.png');
+            height: 29px;
+            width: 29px;
+            top: 4px;
+            right: 0;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    button {
+        border: none;
+        position: absolute;
+    }
+
+    .title {
+
+        &_fz16 {
+            text-transform: none;
+            font-weight: 500;
+            text-align: start;
+        }
+
+        &_fz14 {
+            font-weight: 500;
+            text-transform: none;
+            text-align: start;
+        }
+    }
+
+}

@@ -1,0 +1,54 @@
+.title {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+
+    &_fz250 {
+        font-weight: 600;
+        font-size: 250px;
+        line-height: 140%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fdfdf0;
+    }
+
+    &_fz40 {
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    &_fz32 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 120%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fdfdf0;
+    }
+
+    &_fz22 {
+        font-weight: 500;
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    &_fz16 {
+        font-weight: 500;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #0e0d0d;
+    }
+
+    &_fz14 {
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    span {
+        color: #f2a531;
+    }
+}

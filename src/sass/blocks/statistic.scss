@@ -68,12 +68,19 @@
             width: 938px;
         }
 
-        &-text {}
+        &-text {
+            span {
+                font-weight: 600;
+                color: #f2a531
+            }
+        }
 
 
         &-raiting {
             display: flex;
             flex-wrap: wrap;
+            margin: 0 auto;
+            padding-top: 45px;
         }
 
         &-item {

@@ -1,0 +1,17 @@
+@use "/src/sass/base/title.scss" as *;
+@use "/src/sass/base/basic.scss" as *;
+
+.scale {
+    padding-top: 115px;
+
+    &__subtitle {
+        width: 100%;
+    }
+
+    &__img {
+        width: 100%;
+        object-fit: cover;
+
+        margin-top: -150px;
+    }
+}

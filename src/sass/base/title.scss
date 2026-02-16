@@ -6,6 +6,15 @@
     text-align: center;
     color: #000;
 
+    &_fz300 {
+        font-weight: 600;
+        font-size: 278px;
+        line-height: 1;
+        text-transform: uppercase;
+        text-align: center;
+        color: #f2a531;
+    }
+
     &_fz250 {
         font-weight: 600;
         font-size: 250px;
@@ -19,6 +28,8 @@
         font-weight: 400;
         font-size: 40px;
         line-height: 130%;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     &_fz32 {

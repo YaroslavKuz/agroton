@@ -1,0 +1,88 @@
+@use "/src/sass/base/title.scss" as *;
+@use "/src/sass/base/basic.scss" as *;
+
+.blog {
+    border-radius: 20px;
+    margin: 180px 50px 0 50px;
+    background: #f4f4e7;
+
+
+
+    &__title {
+        padding-top: 100px;
+        text-transform: uppercase;
+    }
+
+    &__items {
+        padding-top: 40px;
+        display: grid;
+        grid-template-columns: 580px auto;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 32px 44px;
+    }
+
+    &__item-big {
+        grid-row: 1/-1;
+    }
+
+    &__item {
+        &-info {
+            padding-top: 32px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 143%;
+            color: #f2a531;
+
+            a {
+                text-decoration: none;
+                color: #f2a531
+            }
+
+
+        }
+
+        &-title {
+            position: relative;
+            display: block;
+            padding-top: 12px;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 133%;
+            color: #101828;
+            text-decoration: none;
+
+            &::after {
+                position: absolute;
+                content: "";
+                background: url(/src/img/blog/Iconwrap.png);
+                height: 28px;
+                width: 24px;
+                top: 11px;
+                right: 0;
+                transform: translateX(-50%);
+            }
+        }
+
+        &-text {
+            padding-top: 12px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #667085;
+        }
+
+
+
+        &-small {
+            display: flex;
+            gap: 20px;
+
+            img {
+                height: 200px;
+                width: 320px;
+                object-fit: cover;
+            }
+        }
+
+    }
+}

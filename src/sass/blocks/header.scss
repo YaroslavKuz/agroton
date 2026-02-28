@@ -8,19 +8,24 @@ body {
 
 .header {
     padding: 30px 0;
+    position: relative;
 
     &__inner {
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+
+        @media screen and (max-width: 1280px) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     &__logo {
         display: flex;
         gap: 8px;
         align-items: center;
-
     }
 
     &__menu {
@@ -30,6 +35,15 @@ body {
             gap: 30px;
             list-style: none;
             flex-direction: row;
+
+            @media screen and (max-width: 1024px) {
+                align-items: center;
+            }
+
+            @media screen and (max-width: 870px) {
+                flex-direction: column;
+                gap: 10px;
+            }
         }
 
         li {
@@ -39,5 +53,89 @@ body {
 
     &__btns {
         color: #F4F4E7;
+
+        @media screen and (max-width: 480px) {
+            font-size: 14px;
+        }
+    }
+
+    &__burger {
+        display: none;
+        flex-direction: column;
+        gap: 6px;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        width: 25px;
+        height: 18px;
+        position: relative;
+
+        @media screen and (max-width: 870px) {
+            display: flex;
+        }
+    }
+
+    &__burger-line {
+        width: 100%;
+        height: 3px;
+        background-color: #000;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+        display: block;
+    }
+
+    &__burger.active &__burger-line:nth-child(1) {
+        transform: rotate(45deg) translate(8px, 8px);
+    }
+
+    &__burger.active &__burger-line:nth-child(2) {
+        opacity: 0;
+    }
+
+    &__burger.active &__burger-line:nth-child(3) {
+        transform: rotate(-45deg) translate(8px, -8px);
+    }
+
+    &__menu {
+        @media screen and (max-width: 870px) {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background-color: #FDFDF0;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0;
+            z-index: 100;
+
+            &.active {
+                max-height: 500px;
+                padding: 20px 0;
+            }
+        }
+
+        ul {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            flex-direction: row;
+
+            @media screen and (max-width: 1024px) {
+                align-items: center;
+            }
+
+            @media screen and (max-width: 870px) {
+                flex-direction: column;
+                gap: 20px;
+                padding: 0 20px;
+                align-items: flex-start;
+            }
+        }
+
+        li {
+            cursor: pointer;
+        }
     }
 }

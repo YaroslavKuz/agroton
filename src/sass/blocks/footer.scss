@@ -10,6 +10,11 @@
         display: flex;
         justify-content: space-between;
         padding-top: 100px;
+
+        @media screen and (max-width: 1280px) {
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     &__navigation {
@@ -51,6 +56,13 @@
         justify-content: space-between;
         padding: 15px 0 100px 0;
 
+        @media screen and (max-width: 870px) {
+            flex-direction: column;
+        }
+
+        @media screen and (max-width: 480px) {
+            padding: 10px;
+        }
     }
 
     .line {

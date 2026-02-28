@@ -133,3 +133,36 @@
     }
 
 }
+
+@media screen and (max-width: 1280px) {
+    .contact {
+        &__wrapper {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .contact {
+        &__box {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .contact {
+        &__desc {
+            flex-direction: column;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact {
+        &__text {
+            font-size: 14px;
+        }
+    }
+}

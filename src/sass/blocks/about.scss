@@ -117,3 +117,42 @@
         }
     }
 }
+
+@media screen and (max-width: 570px) {
+    .about {
+        &__achivement {
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+
+            &-imgbox {
+                width: 100%;
+                height: 100%;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+
+    .title {
+        &_fz250 {
+            padding-top: 60px;
+            font-size: 40px;
+        }
+
+        &_fz32 {
+            padding-top: 40px;
+            font-size: 18px;
+        }
+    }
+
+    .about {
+        &__achivements {
+            gap: 20px;
+        }
+    }
+}
